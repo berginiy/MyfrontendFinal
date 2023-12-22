@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b65d1382-2de2-42e1-81f0-07fa057c9cae" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/main/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/main/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authapp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/authapp/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authapp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/authapp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authapp/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/authapp/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authapp/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/authapp/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authapp/migrations/0002_alter_customuser_email_alter_customuser_password_and_more.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/authapp/migrations/0002_alter_customuser_email_alter_customuser_password_and_more.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authapp/migrations/0003_alter_customuser_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/authapp/migrations/0003_alter_customuser_password.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authapp/migrations/0004_alter_customuser_email_alter_customuser_username.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/authapp/migrations/0004_alter_customuser_email_alter_customuser_username.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authapp/migrations/0005_alter_customuser_email_alter_customuser_first_name_and_more.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/authapp/migrations/0005_alter_customuser_email_alter_customuser_first_name_and_more.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authapp/migrations/0006_alter_customuser_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/authapp/migrations/0006_alter_customuser_password.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authapp/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/authapp/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/authapp/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authapp/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/authapp/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authapp/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/authapp/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/authapp/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/authapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatgpt/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/chatgpt/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatgpt/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/chatgpt/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatgpt/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/chatgpt/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatgpt/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/chatgpt/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatgpt/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/chatgpt/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatgpt/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/chatgpt/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatgpt/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/chatgpt/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatgpt/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/chatgpt/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatgpt/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/chatgpt/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatgpt/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/chatgpt/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/main/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/main/requirements.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="backend" />
+                <branch-info repo="$PROJECT_DIR$/main" source="backend" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2YclWc3kM8LvweUhYjY4ta4y8Ze" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "51ef57f9",
+    "last_opened_file_path": "C:/All python/ProjectFinal",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\All python\ProjectFinal\main" />
+      <recent name="C:\All python\ProjectFinal" />
+      <recent name="C:\All python\ProjectFinal\man" />
+      <recent name="C:\All python\ProjectFinal\main\fix" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ProjectFinal" type="Python.DjangoServer" factoryName="Django server">
+      <module name="ProjectFinal" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b65d1382-2de2-42e1-81f0-07fa057c9cae" name="Changes" comment="" />
+      <created>1700832781968</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700832781968</updated>
+      <workItem from="1700832782696" duration="8231000" />
+      <workItem from="1700849966324" duration="290000" />
+      <workItem from="1700901628981" duration="279000" />
+      <workItem from="1700905630642" duration="5653000" />
+      <workItem from="1700922784853" duration="5543000" />
+      <workItem from="1700932191329" duration="2696000" />
+      <workItem from="1700988262701" duration="10753000" />
+      <workItem from="1701054116387" duration="4239000" />
+      <workItem from="1701098109898" duration="7757000" />
+      <workItem from="1701159775158" duration="3350000" />
+      <workItem from="1701163275844" duration="2251000" />
+      <workItem from="1701188470179" duration="6053000" />
+      <workItem from="1701312982897" duration="5665000" />
+      <workItem from="1701361518019" duration="1136000" />
+      <workItem from="1701598374398" duration="8862000" />
+      <workItem from="1701705868040" duration="197000" />
+      <workItem from="1701765256090" duration="3790000" />
+      <workItem from="1702046716072" duration="6056000" />
+      <workItem from="1702108241456" duration="18607000" />
+      <workItem from="1702196092541" duration="16789000" />
+      <workItem from="1702224170583" duration="7826000" />
+      <workItem from="1702267718109" duration="7360000" />
+      <workItem from="1702285324822" duration="13507000" />
+      <workItem from="1702300737333" duration="3917000" />
+      <workItem from="1702306866538" duration="1675000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ьу/chatgpt/models.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
