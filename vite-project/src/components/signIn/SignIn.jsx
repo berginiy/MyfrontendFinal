@@ -2,7 +2,7 @@
 export default function SignIn() {
   return(
     <div className="body_form">
-      <form action="" method="get">
+      <form action="" method="post">
         <h2>Login</h2>
         <label htmlFor="username">username:</label>
         <input type="text" name='username' placeholder="write your username" required/>
