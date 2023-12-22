@@ -1,8 +1,0 @@
-# Устанавливаем правила для файлов в .idea/dataSources/
-.idea/dataSources/*.xml eol=lf
-
-# Устанавливаем правила для файлов в .idea/inspectionProfiles/
-.idea/inspectionProfiles/*.xml eol=lf
-
-# Устанавливаем правила для файла .idea/workspace.xml
-.idea/workspace.xml eol=lf
