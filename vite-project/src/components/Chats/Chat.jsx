@@ -1,33 +1,40 @@
-// import { Link } from 'react-router-dom';
-// import { UserContext } from '../../App';
-// import { useContext } from 'react';
+// Chat.js
+import React, { useState } from 'react';
 
-export default function Chat() {
+const Chat = () => {
     const [messages, setMessages] = useState([]);
     const [userInput, setUserInput] = useState('');
 
     const sendMessage = () => {
         if (userInput.trim() === '') return;
-        setMessages([...messages, { type: 'user', text: userInput }]);
+
+        setMessages(prevMessages => [...prevMessages, { type: 'user', text: userInput }]);
         setUserInput('');
+
         const response = 'Example response from the server.';
-        setMessages([...messages, { type: 'bot', text: response }]);
+        setMessages(prevMessages => [...prevMessages, { type: 'bot', text: response }]);
     };
 
     return (
-        <div className="App">
-            <div className="chat-container">
-                <Chat messages={messages} setMessages={setMessages} />
-                <div className="user-input">
-                    <input
-                        type="text"
-                        value={userInput}
-                        placeholder="Enter your message..."
-                        onChange={(e) => setUserInput(e.target.value)}
-                    />
-                    <button onClick={sendMessage}>Send</button>
-                </div>
+        <div className="chat-container">
+            <div className="chat">
+                {messages.map((message, index) => (
+                    <div key={index} className={message.type}>
+                        {message.text}
+                    </div>
+                ))}
+            </div>
+            <div className="user-input">
+                <input
+                    type="text"
+                    value={userInput}
+                    placeholder="Enter your message..."
+                    onChange={(e) => setUserInput(e.target.value)}
+                />
+                <button onClick={sendMessage}>Send</button>
             </div>
         </div>
     );
-}
+};
+
+export default Chat;
