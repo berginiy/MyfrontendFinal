@@ -69,33 +69,33 @@ nav {
 
 @media (max-width: 768px) {
   .nav {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      position: absolute;
-      top: 70px;
-      left: 0;
-      background-color: #0b0f15;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #0b0f15;
   }
 
   .nav.show {
-      display: flex;
+    display: flex;
   }
 }
 
 
 @media (max-width: 768px) {
   .header_inner {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .nav {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .link {
-      margin-right: 0;
+    margin-right: 0;
   }
 }
 
@@ -148,8 +148,8 @@ nav {
 
 @media screen and (max-width: 768px) {
   .content-container {
-      flex-direction: row;
-      justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -203,20 +203,21 @@ ul,
 li {
   text-decoration: none;
   color: #fff;
-  font-size: calc(17px + (18 - 17) * ((100vw - 320px) / (1024 - 320)));;
+  font-size: calc(17px + (18 - 17) * ((100vw - 320px) / (1024 - 320)));
+  ;
   opacity: 0.8;
   transition: all 0.3s ease, opacity 0.3s ease;
 }
 
 @media screen and (max-width: 420px) {
   .menu_flex {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .menu_title,
   .hub_list {
-      max-width: 100%;
-      padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1024 - 320)));
+    max-width: 100%;
+    padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1024 - 320)));
   }
 }
 
@@ -255,40 +256,40 @@ img:hover {
 
 @media (max-width: 768px) {
   .section {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      background-color: #0b0f15;
-      padding: 50px 20px;
-      color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0b0f15;
+    padding: 50px 20px;
+    color: #fff;
   }
 
   .section_text,
   .btn {
-      text-align: left;
-      max-width: 100%;
-      max-width: 455px;
-      margin-bottom: calc(6px + (14 - 6) * ((100vw - 320px) / (1024 - 320)));
-      padding: calc(15px + (45 - 15) * ((100vw - 320px) / (1024 - 320)));
-      font-size: calc(20px + (25 - 20) * ((100vw - 320px) / (1024 - 320)));
+    text-align: left;
+    max-width: 100%;
+    max-width: 455px;
+    margin-bottom: calc(6px + (14 - 6) * ((100vw - 320px) / (1024 - 320)));
+    padding: calc(15px + (45 - 15) * ((100vw - 320px) / (1024 - 320)));
+    font-size: calc(20px + (25 - 20) * ((100vw - 320px) / (1024 - 320)));
 
 
   }
 
   img {
-      border-radius: 30px;
-      transition: all 0.6s ease;
-      height: calc(310px + (680 - 230) * ((100vw - 320px) / (1024 - 320)));
-      width: calc(290px + (720 - 210) * ((100vw - 320px) / (1024 - 320)));
+    border-radius: 30px;
+    transition: all 0.6s ease;
+    height: calc(310px + (680 - 230) * ((100vw - 320px) / (1024 - 320)));
+    width: calc(290px + (720 - 210) * ((100vw - 320px) / (1024 - 320)));
   }
 
   header {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-      align-items: center;
-      padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
   }
 }
 
@@ -338,7 +339,7 @@ input {
   box-sizing: border-box;
 }
 
-.form, 
+.form,
 .form_blue,
 .form_red {
   background-color: #4caf50;
@@ -368,4 +369,63 @@ input {
 
 .form_red:hover {
   background-color: #c20b0b
+}
+
+.App {
+  text-align: center;
+}
+
+.chat-container {
+  max-width: 400px;
+  margin: 50px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.chat-box {
+  height: 300px;
+  padding: 10px;
+  overflow-y: scroll;
+  background-color: #fff;
+}
+
+.user,
+.bot {
+  margin-bottom: 10px;
+}
+
+.user {
+  text-align: left;
+}
+
+.bot {
+  text-align: right;
+}
+
+.user-input {
+  display: flex;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  padding: 8px 12px;
+  margin-left: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
 }

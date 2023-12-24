@@ -24,6 +24,7 @@ const App = () => {
           <Route path="/authuser" element={<MainOurUserPage/>}/>
           <Route path='/home' element={<HomePage/>}/>
           <Route path="/game" element={<GamePage/>}/>
+          <Route path='/home' element={<HomePage/>}/>
         </Routes>
       </BrowserRouter>
     </UserContext.Provider>

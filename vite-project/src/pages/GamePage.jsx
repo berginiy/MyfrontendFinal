@@ -1,6 +1,7 @@
-
-export default function GamePage () {
+export default function GamePage() {
   return (
-    <div>GamePage</div>
+    <div>
+      <Chat />
+    </div>
   )
 }

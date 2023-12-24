@@ -1,4 +1,3 @@
-
 export default function MainForHome() {
   return(
     <div className="picture">
