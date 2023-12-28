@@ -1,4 +1,5 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import axios from 'axios';
 
 const Chat = () => {
     const [messages, setMessages] = useState([]);
@@ -6,15 +7,22 @@ const Chat = () => {
     const [draggedItem, setDraggedItem] = useState(null);
 
     const chatBoxRef = useRef(null);
+    const apiUrl = 'http://127.0.0.1:8000/api/schema/swagger-ui/#/api/api_v1_chatgpt_games_action_create'; // Замените на фактический URL вашего API
 
-    const sendMessage = () => {
+    const sendMessage = async () => {
         if (userInput.trim() === '') return;
 
-        setMessages(prevMessages => [...prevMessages, { type: 'user', text: userInput }]);
-        setUserInput('');
+        // Отправка сообщения на сервер ChatGPT
+        const response = await axios.post(apiUrl, { message: userInput });
 
-        const response = 'Example response from the server.';
-        setMessages(prevMessages => [...prevMessages, { type: 'bot', text: response }]);
+        // Сохранение ответа от ChatGPT в чате
+        setMessages(prevMessages => [
+            ...prevMessages,
+            { type: 'user', text: userInput },
+            { type: 'bot', text: response.data.message },
+        ]);
+
+        setUserInput('');
     };
 
     const handleDragStart = (index) => {
@@ -37,13 +45,17 @@ const Chat = () => {
         setDraggedItem(null);
     };
 
+    useEffect(() => {
+        // Прокрутка вниз чата при изменении сообщений
+        if (chatBoxRef.current) {
+            chatBoxRef.current.scrollTop = chatBoxRef.current.scrollHeight;
+        }
+    }, [messages]);
+
     return (
         <div>
-            <header className="header">
-                <h1>Chat Interface</h1>
-            </header>
-            <div className="chat-container">
-                <div className="chat-box" ref={chatBoxRef}>
+            <div className="chat-container" ref={chatBoxRef}>
+                <div className="chat-box">
                     {messages.map((message, index) => (
                         <div
                             key={index}
@@ -67,9 +79,6 @@ const Chat = () => {
                     <button className='btn_chat' onClick={sendMessage}>Send</button>
                 </div>
             </div>
-            <footer className="footer">
-                <p>© 2023 Chat App. All rights reserved.</p>
-            </footer>
         </div>
     );
 };
