@@ -1,11 +1,11 @@
-import HeaderOld from '../components/headerOurUser/HeaderOld';
+import HeaderNew from '../components/headerNewUser/HeaderNew';
 import MainForHome from '../components/mains/MainForHome';
 import Form from '../components/form/Form'
 
 export default function HomePage() {
   return (
     <div className='wrapper'>
-      <HeaderOld/>
+      <HeaderNew/>
       <MainForHome/>
       <Form/>
     </div>

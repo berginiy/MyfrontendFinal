@@ -1,6 +1,8 @@
-import { useState, useContext } from 'react'
-import axios from 'axios'
-import { UserContext } from '../../App.jsx'
+import { useState, useContext } from 'react';
+import axios from 'axios';
+import { UserContext } from '../../App.jsx';
+import { Link } from 'react-router-dom';
+
 
 export default function SignUp() {
   <input type="text" name="username" placeholder="make your username" />
@@ -8,6 +10,8 @@ export default function SignUp() {
   const [password, setPassword] = useState()
   const [passwordConfirm, setPasswordConfirm] = useState()
   const [email, setEmail] = useState()
+  const [first_name, setFirstname] = useState()
+  const [last_name, setLastname] = useState()
   const [user, setUser] = useContext(UserContext)
 
   function setInputPassword(event) {
@@ -26,6 +30,14 @@ export default function SignUp() {
     setUsername(event.target.value)
   }
 
+  function setInputFirstname(event) {
+    setFirstname(event.target.value)
+  }
+
+  function setInputLastname(event) {
+    setLastname(event.target.value)
+  }
+
   function sendForm(event) {
     event.preventDefault();
 
@@ -34,8 +46,8 @@ export default function SignUp() {
       email: email,
       password: password,
       confirm_password: passwordConfirm,
-      first_name: 'Artur',
-      last_name: 'Davletshin'
+      first_name: first_name,
+      last_name: last_name
     })
       .then(res => {
         console.log(res);
@@ -48,6 +60,10 @@ export default function SignUp() {
     <div className="body_form">
       <form onSubmit={sendForm} action="" method="post">
         <h2>Register</h2>
+        <label htmlFor="first_name">first name:</label>
+        <input onChange={setInputFirstname} type="text" name="first_name" placeholder="write your first name" />
+        <label htmlFor="last_name">last name:</label>
+        <input onChange={setInputLastname} type="text" name="last_name" placeholder="write your last name" />
         <label htmlFor="username">username:</label>
         <input onChange={setInputUsername} type="text" name="username" placeholder="make your username" />
         <label htmlFor="email">email:</label>
@@ -56,7 +72,8 @@ export default function SignUp() {
         <input onChange={setInputPassword} type="password" name="password" placeholder="make your password" />
         <label htmlFor="password_again">password:</label>
         <input onChange={setInputPasswordConfirm} type="password" name="password_again" placeholder="write your password again" />
-        <button className='form' type="submit">SignUp</button>
+        <button className='form' type="submit"><Link className='form_link' to='/'>SignUp</Link></button>
+        <button className="form_red" type="submit"><Link className='form_link' to='/'>Back</Link></button>
       </form>
     </div>
   )

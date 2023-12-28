@@ -1,6 +1,7 @@
 import { useState, useContext } from 'react';
 import axios from 'axios';
 import { UserContext } from '../../App.jsx';
+import { Link } from 'react-router-dom';
 
 export default function SignIn() {
   const [username, setUsername] = useState('');
@@ -51,8 +52,9 @@ export default function SignIn() {
         <input onChange={setInputUsername} type="text" name="username" placeholder="Enter your username" />
         <label htmlFor="password">Password:</label>
         <input onChange={setInputPassword} type="password" name="password" placeholder="Enter your password" />
-        <button className="form" type="submit">SignIn</button>
+        <button className="form" type="submit"><Link className='form_link' to='/'>SignIn</Link></button>
+        <button className="form_red" type="submit"><Link className='form_link' to='/'>Back</Link></button>
       </form>
-    </div>
+    </div> 
   );
 }

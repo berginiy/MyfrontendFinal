@@ -2,7 +2,7 @@ export default function Form() {
   return(
     <div className="body_form">
       <form action="" method="post">
-        <h2>UserData</h2>
+        <h2>Story</h2>
         <label htmlFor="lore">lore:</label>
         <input type="text" name='lore' placeholder="write your personal lore for the game" />
         <label htmlFor="role">role:</label>

@@ -64,7 +64,7 @@ const Chat = () => {
                         placeholder="Enter your message..."
                         onChange={(e) => setUserInput(e.target.value)}
                     />
-                    <button onClick={sendMessage}>Send</button>
+                    <button className='btn_chat' onClick={sendMessage}>Send</button>
                 </div>
             </div>
             <footer className="footer">

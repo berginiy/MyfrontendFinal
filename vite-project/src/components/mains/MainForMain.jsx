@@ -11,7 +11,7 @@ export default function MainForMain() {
         <div className="btn">
           <Link className='link' to='/game'>Start Game</Link>
         </div>
-        {/* <div className="section">
+        <div className="section">
           <div className="pip">
             <div className="about">
               <div className="about_item">
@@ -23,7 +23,7 @@ export default function MainForMain() {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
       </section>
     </main>
   )
